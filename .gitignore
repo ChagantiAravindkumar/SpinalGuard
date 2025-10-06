@@ -1,0 +1,54 @@
+cat > .gitignore <<'EOF'
+# ----------------------------
+# Python backend ignores
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+venv/
+env/
+*.egg-info/
+
+# ----------------------------
+# Node/React frontend ignores
+# ----------------------------
+node_modules/
+build/
+dist/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+.DS_Store
+
+# ----------------------------
+# Environment & secrets
+# ----------------------------
+.env
+*.env
+/secrets/
+config.json
+token.json
+
+# ----------------------------
+# Datasets / models
+# ----------------------------
+/data/
+/datasets/
+/models/
+/weights/
+*.h5
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# ----------------------------
+# IDE & system files
+# ----------------------------
+.vscode/
+.idea/
+*.log
+Thumbs.db
+EOF
